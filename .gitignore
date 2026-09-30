@@ -1,0 +1,18 @@
+# Backend (Python/Django)
+backend/.venv/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/db.sqlite3
+backend/.env
+backend/staticfiles/
+
+# Frontend (Node)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

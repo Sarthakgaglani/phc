@@ -1,0 +1,72 @@
+/*
+ * Design tokens — the single source of truth for spacing, type, color, and
+ * the 4-level risk palette. Every dashboard (PHC/District/State), alert,
+ * and recommendation card reuses these identically (CLAUDE.md UI/UX
+ * requirement). Add new tokens here, never inline a one-off color/spacing
+ * value in a component.
+ */
+:root {
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Typography scale */
+  --font-family-base: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.75rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Radius / elevation */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --shadow-card: 0 1px 3px rgba(20, 32, 28, 0.04), 0 1px 2px rgba(20, 32, 28, 0.02);
+  --shadow-elevated: 0 4px 6px -1px rgba(20, 32, 28, 0.08), 0 2px 4px -2px rgba(20, 32, 28, 0.05);
+
+  /* Base palette & Stitch Surface Hierarchy */
+  --color-bg: #f5f4f0;
+  --color-surface: #ffffff;
+  --color-surface-low: #f5f4f0;
+  --color-surface-container: #efeeea;
+  --color-surface-high: #e9e8e4;
+  --color-surface-highest: #e3e2df;
+  --color-border: #e5e1da;
+  --color-border-subtle: #efece6;
+  --color-border-strong: #d1ccc0;
+  --color-text-primary: #1f2421;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-primary: #14201c;
+  --color-primary-contrast: #ffffff;
+  --color-secondary: #1c6c31;
+  --color-secondary-container: #a1f2a8;
+
+  /* Risk palette — fixed 4 levels */
+  --risk-critical-bg: #fbe4e4;
+  --risk-critical-text: #b3261e;
+  --risk-critical-border: #f4c7c7;
+
+  --risk-high-bg: #fbeed4;
+  --risk-high-text: #9a6a17;
+  --risk-high-border: #f2d8a7;
+
+  --risk-medium-bg: #dde8fb;
+  --risk-medium-text: #29579c;
+  --risk-medium-border: #bfd5f8;
+
+  --risk-safe-bg: #dcf0df;
+  --risk-safe-text: #2c7a3d;
+  --risk-safe-border: #b8e2be;
+}
